@@ -20,8 +20,6 @@ export default function Home() {
   const { expenses } = useContext(FinanceContext);
   const [totalBalance, setTotalBalance] = useState(0);
 
-  // Calculate the total balance dynamically by summing all income amounts
-
   useEffect(() => {
     // Toplam geliri hesapla
     const totalIncome = income.reduce(
